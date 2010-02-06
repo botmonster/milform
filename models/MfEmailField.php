@@ -16,11 +16,11 @@ class MfEmailField extends MfInputField {
 
    public function validate(){
         if(strlen($this->value) > 0 && !preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/", $this->value)){
-            return $this->markInvalid('Niepoprawny adres e-mail');
+            return $this->markInvalid('E-mail invalid');
         }
 
         return $this;
    }
-   
+
 }
 
