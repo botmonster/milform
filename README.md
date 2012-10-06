@@ -7,8 +7,8 @@ Milform is free php library (MIT licence) for easy form creation. It is based on
 
 Example
 -------
-### <?php
-
+```php
+<?php
     $groupA = new MfGroupField('A', 'Personal information');
         $groupA
         ->addField(new MfInputField('name','Name'))
@@ -39,7 +39,7 @@ Example
     }
 
     echo $groupA->getHTML();
-
+```
 More
 ----
 More advanced examples at: [http://7items.net/milform/](http://7items.net/milform/)
